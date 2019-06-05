@@ -1,0 +1,66 @@
+09:39:37 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+nodeCmp.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/globals.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cobjectfactory.h:20,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:30,
+                 from nodeCmp.cc:2:
+nodeCmp.cc:11:1: error: expected unqualified-id before ‘namespace’
+ Define_Module(NodeCmp);
+ ^
+nodeCmp.cc:13:6: error: ‘StampNode’ has not been declared
+ void StampNode::initialize() {
+      ^~~~~~~~~
+nodeCmp.cc:13:6: error: ‘void NodeCmp::initialize()’ cannot be overloaded
+nodeCmp.cc:9:22: error: with ‘virtual void NodeCmp::initialize()’
+         virtual void initialize() override;
+                      ^~~~~~~~~~
+nodeCmp.cc:15:1: error: expected ‘}’ at end of input
+ }
+ ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from nodeCmp.cc:2:
+nodeCmp.cc: In static member function ‘static omnetpp::cObject* NodeCmp::__factoryfunc_11()’:
+nodeCmp.cc:11:15: error: invalid new-expression of abstract class type ‘NodeCmp’
+ Define_Module(NodeCmp);
+               ^
+nodeCmp.cc:6:7: note:   because the following virtual functions are pure within ‘NodeCmp’:
+ class NodeCmp : public cComponent {
+       ^~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:33:0,
+                 from nodeCmp.cc:2:
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:173:18: note: 	virtual void omnetpp::cComponent::callRefreshDisplay()
+     virtual void callRefreshDisplay() = 0;
+                  ^~~~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:340:26: note: 	virtual omnetpp::cProperties* omnetpp::cComponent::getProperties() const
+     virtual cProperties *getProperties() const = 0;
+                          ^~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:377:27: note: 	virtual omnetpp::cComponent::ComponentKind omnetpp::cComponent::getComponentKind() const
+     virtual ComponentKind getComponentKind() const = 0;
+                           ^~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:394:22: note: 	virtual omnetpp::cModule* omnetpp::cComponent::getParentModule() const
+     virtual cModule *getParentModule() const = 0;
+                      ^~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:412:18: note: 	virtual void omnetpp::cComponent::callInitialize()
+     virtual void callInitialize() = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:418:18: note: 	virtual bool omnetpp::cComponent::callInitialize(int)
+     virtual bool callInitialize(int stage) = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:424:18: note: 	virtual void omnetpp::cComponent::callFinish()
+     virtual void callFinish() = 0;
+                  ^~~~~~~~~~
+nodeCmp.cc: At global scope:
+nodeCmp.cc:15:1: error: expected unqualified-id at end of input
+ }
+ ^
+make: *** [out/gcc-release//nodeCmp.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//nodeCmp.o' failed
+
+09:39:39 Build Finished (took 1s.971ms)
+

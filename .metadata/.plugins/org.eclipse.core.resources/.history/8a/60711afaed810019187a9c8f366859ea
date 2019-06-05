@@ -1,0 +1,22 @@
+simple Node
+{
+    parameters:
+		bool master = default(false);
+	gates:
+	    inout gate[];
+}
+
+network MasterSlave{
+    types:
+        channel Channel extends ned.DelayChannel{
+            delay = 100ms;
+        }
+	submodules:
+	    master: Node;
+	    slave1: Node;
+	    slave2: Node;
+	connections:
+	    master.gate++ <--> Channel <--> slave1.gate++;
+	    master.gate++ <--> Channel <--> slave2.gate++;
+}
+

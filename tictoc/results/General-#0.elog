@@ -1,0 +1,292 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1284 rid General-0-20190529-09:30:32-13738 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t Tictoc n Tictoc cm 1
+MS id 1 d bgb=400,415
+MC id 2 c Txc t Tic pid 1 n tic[0]
+MS id 2 d i=block/routing,cyan
+MC id 3 c Txc t Tic pid 1 n tic[1]
+MS id 3 d i=block/routing,cyan
+MC id 4 c Txc t Tic pid 1 n tic[2]
+MS id 4 d i=block/routing,cyan
+MC id 5 c Txc t Tic pid 1 n tic[3]
+MS id 5 d i=block/routing,cyan
+MC id 6 c Txc t Tic pid 1 n tic[4]
+MS id 6 d i=block/routing,cyan
+MC id 7 c Txc t Tic pid 1 n tic[5]
+MS id 7 d i=block/routing,cyan
+GC m 2 g 2621440 n out i 0 o 1
+GC m 3 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621440 dm 3 dg 1048576
+CS sm 2 sg 2621440 d ""
+GC m 3 g 2621440 n out i 0 o 1
+GC m 2 g 1048576 n in i 0 o 0
+CC sm 3 sg 2621440 dm 2 dg 1048576
+CS sm 3 sg 2621440 d ""
+GC m 3 g 2621441 n out i 1 o 1
+GC m 4 g 1048576 n in i 0 o 0
+CC sm 3 sg 2621441 dm 4 dg 1048576
+CS sm 3 sg 2621441 d ""
+GC m 4 g 2621440 n out i 0 o 1
+GC m 3 g 1048577 n in i 1 o 0
+CC sm 4 sg 2621440 dm 3 dg 1048577
+CS sm 4 sg 2621440 d ""
+GC m 3 g 2621442 n out i 2 o 1
+GC m 6 g 1048576 n in i 0 o 0
+CC sm 3 sg 2621442 dm 6 dg 1048576
+CS sm 3 sg 2621442 d ""
+GC m 6 g 2621440 n out i 0 o 1
+GC m 3 g 1048578 n in i 2 o 0
+CC sm 6 sg 2621440 dm 3 dg 1048578
+CS sm 6 sg 2621440 d ""
+GC m 5 g 2621440 n out i 0 o 1
+GC m 6 g 1048577 n in i 1 o 0
+CC sm 5 sg 2621440 dm 6 dg 1048577
+CS sm 5 sg 2621440 d ""
+GC m 6 g 2621441 n out i 1 o 1
+GC m 5 g 1048576 n in i 0 o 0
+CC sm 6 sg 2621441 dm 5 dg 1048576
+CS sm 6 sg 2621441 d ""
+GC m 6 g 2621442 n out i 2 o 1
+GC m 7 g 1048576 n in i 0 o 0
+CC sm 6 sg 2621442 dm 7 dg 1048576
+CS sm 6 sg 2621442 d ""
+GC m 7 g 2621440 n out i 0 o 1
+GC m 6 g 1048578 n in i 2 o 0
+CC sm 7 sg 2621440 dm 6 dg 1048578
+CS sm 7 sg 2621440 d ""
+MB sm 1 tm 2 m initialize(0)
+CM id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n event pe -1
+CM id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n timeout pe -1
+CM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n tictocMsg pe -1
+- INFO (Tic)Tictoc.tic[0]: Sending initial message
+ME
+id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n tictocMsg pe 0
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n tictocMsg pe 0 cid 3
+SH sm 2 sg 2621440 pd 0.1
+ES t 0.1
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n timeout pe 0
+ES t 0
+ME
+MB sm 1 tm 3 m initialize(0)
+CM id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n event pe -1
+CM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n timeout pe -1
+ME
+MB sm 1 tm 4 m initialize(0)
+CM id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n event pe -1
+CM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n timeout pe -1
+ME
+MB sm 1 tm 5 m initialize(0)
+CM id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n event pe -1
+CM id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n timeout pe -1
+ME
+MB sm 1 tm 6 m initialize(0)
+CM id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n event pe -1
+CM id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n timeout pe -1
+ME
+MB sm 1 tm 7 m initialize(0)
+CM id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n event pe -1
+CM id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n timeout pe -1
+ME
+
+E # 1 t 0 m 2 ce 0 msg 1
+CL id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n timeout pe 1 cid 14
+BS id 14 tid 1 eid 14 etid 1 c omnetpp::cMessage n timeout pe 1
+CL id 14 tid 1 eid 14 etid 1 c omnetpp::cMessage n timeout pe 1 cid 15
+SH sm 2 sg 2621440 pd 0.1
+ES t 0.1
+
+E # 2 t 0.1 m 3 ce 0 msg 2
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n tictocMsg pe 2 cid 16
+BS id 16 tid 2 eid 16 etid 2 c omnetpp::cMessage n tictocMsg pe 2
+CL id 16 tid 2 eid 16 etid 2 c omnetpp::cMessage n tictocMsg pe 2 cid 17
+SH sm 3 sg 2621441 pd 0.1
+ES t 0.2
+
+E # 3 t 0.1 m 3 ce 1 msg 14
+CL id 14 tid 1 eid 14 etid 1 c omnetpp::cMessage n timeout pe 3 cid 18
+BS id 18 tid 1 eid 18 etid 1 c omnetpp::cMessage n timeout pe 3
+CL id 18 tid 1 eid 18 etid 1 c omnetpp::cMessage n timeout pe 3 cid 19
+SH sm 3 sg 2621440 pd 0.1
+ES t 0.2
+
+E # 4 t 0.2 m 4 ce 2 msg 16
+CL id 16 tid 2 eid 16 etid 2 c omnetpp::cMessage n tictocMsg pe 4 cid 20
+BS id 20 tid 2 eid 20 etid 2 c omnetpp::cMessage n tictocMsg pe 4
+CL id 20 tid 2 eid 20 etid 2 c omnetpp::cMessage n tictocMsg pe 4 cid 21
+SH sm 4 sg 2621440 pd 0.1
+ES t 0.3
+
+E # 5 t 0.2 m 2 ce 3 msg 18
+CL id 18 tid 1 eid 18 etid 1 c omnetpp::cMessage n timeout pe 5 cid 22
+BS id 22 tid 1 eid 22 etid 1 c omnetpp::cMessage n timeout pe 5
+CL id 22 tid 1 eid 22 etid 1 c omnetpp::cMessage n timeout pe 5 cid 23
+SH sm 2 sg 2621440 pd 0.1
+ES t 0.3
+
+E # 6 t 0.3 m 3 ce 4 msg 20
+CL id 20 tid 2 eid 20 etid 2 c omnetpp::cMessage n tictocMsg pe 6 cid 24
+BS id 24 tid 2 eid 24 etid 2 c omnetpp::cMessage n tictocMsg pe 6
+CL id 24 tid 2 eid 24 etid 2 c omnetpp::cMessage n tictocMsg pe 6 cid 25
+SH sm 3 sg 2621441 pd 0.1
+ES t 0.4
+
+E # 7 t 0.3 m 3 ce 5 msg 22
+CL id 22 tid 1 eid 22 etid 1 c omnetpp::cMessage n timeout pe 7 cid 26
+BS id 26 tid 1 eid 26 etid 1 c omnetpp::cMessage n timeout pe 7
+CL id 26 tid 1 eid 26 etid 1 c omnetpp::cMessage n timeout pe 7 cid 27
+SH sm 3 sg 2621441 pd 0.1
+ES t 0.4
+
+E # 8 t 0.4 m 4 ce 6 msg 24
+CL id 24 tid 2 eid 24 etid 2 c omnetpp::cMessage n tictocMsg pe 8 cid 28
+BS id 28 tid 2 eid 28 etid 2 c omnetpp::cMessage n tictocMsg pe 8
+CL id 28 tid 2 eid 28 etid 2 c omnetpp::cMessage n tictocMsg pe 8 cid 29
+SH sm 4 sg 2621440 pd 0.1
+ES t 0.5
+
+E # 9 t 0.4 m 4 ce 7 msg 26
+CL id 26 tid 1 eid 26 etid 1 c omnetpp::cMessage n timeout pe 9 cid 30
+BS id 30 tid 1 eid 30 etid 1 c omnetpp::cMessage n timeout pe 9
+CL id 30 tid 1 eid 30 etid 1 c omnetpp::cMessage n timeout pe 9 cid 31
+SH sm 4 sg 2621440 pd 0.1
+ES t 0.5
+
+E # 10 t 0.5 m 3 ce 8 msg 28
+CL id 28 tid 2 eid 28 etid 2 c omnetpp::cMessage n tictocMsg pe 10 cid 32
+BS id 32 tid 2 eid 32 etid 2 c omnetpp::cMessage n tictocMsg pe 10
+CL id 32 tid 2 eid 32 etid 2 c omnetpp::cMessage n tictocMsg pe 10 cid 33
+SH sm 3 sg 2621442 pd 0.1
+ES t 0.6
+
+E # 11 t 0.5 m 3 ce 9 msg 30
+CL id 30 tid 1 eid 30 etid 1 c omnetpp::cMessage n timeout pe 11 cid 34
+BS id 34 tid 1 eid 34 etid 1 c omnetpp::cMessage n timeout pe 11
+CL id 34 tid 1 eid 34 etid 1 c omnetpp::cMessage n timeout pe 11 cid 35
+SH sm 3 sg 2621440 pd 0.1
+ES t 0.6
+
+E # 12 t 0.6 m 6 ce 10 msg 32
+CL id 32 tid 2 eid 32 etid 2 c omnetpp::cMessage n tictocMsg pe 12 cid 36
+BS id 36 tid 2 eid 36 etid 2 c omnetpp::cMessage n tictocMsg pe 12
+CL id 36 tid 2 eid 36 etid 2 c omnetpp::cMessage n tictocMsg pe 12 cid 37
+SH sm 6 sg 2621440 pd 0.1
+ES t 0.7
+
+E # 13 t 0.6 m 2 ce 11 msg 34
+CL id 34 tid 1 eid 34 etid 1 c omnetpp::cMessage n timeout pe 13 cid 38
+BS id 38 tid 1 eid 38 etid 1 c omnetpp::cMessage n timeout pe 13
+CL id 38 tid 1 eid 38 etid 1 c omnetpp::cMessage n timeout pe 13 cid 39
+SH sm 2 sg 2621440 pd 0.1
+ES t 0.7
+
+E # 14 t 0.7 m 3 ce 12 msg 36
+CL id 36 tid 2 eid 36 etid 2 c omnetpp::cMessage n tictocMsg pe 14 cid 40
+BS id 40 tid 2 eid 40 etid 2 c omnetpp::cMessage n tictocMsg pe 14
+CL id 40 tid 2 eid 40 etid 2 c omnetpp::cMessage n tictocMsg pe 14 cid 41
+SH sm 3 sg 2621442 pd 0.1
+ES t 0.8
+
+E # 15 t 0.7 m 3 ce 13 msg 38
+CL id 38 tid 1 eid 38 etid 1 c omnetpp::cMessage n timeout pe 15 cid 42
+BS id 42 tid 1 eid 42 etid 1 c omnetpp::cMessage n timeout pe 15
+CL id 42 tid 1 eid 42 etid 1 c omnetpp::cMessage n timeout pe 15 cid 43
+SH sm 3 sg 2621441 pd 0.1
+ES t 0.8
+
+E # 16 t 0.8 m 6 ce 14 msg 40
+CL id 40 tid 2 eid 40 etid 2 c omnetpp::cMessage n tictocMsg pe 16 cid 44
+BS id 44 tid 2 eid 44 etid 2 c omnetpp::cMessage n tictocMsg pe 16
+CL id 44 tid 2 eid 44 etid 2 c omnetpp::cMessage n tictocMsg pe 16 cid 45
+SH sm 6 sg 2621442 pd 0.1
+ES t 0.9
+
+E # 17 t 0.8 m 4 ce 15 msg 42
+CL id 42 tid 1 eid 42 etid 1 c omnetpp::cMessage n timeout pe 17 cid 46
+BS id 46 tid 1 eid 46 etid 1 c omnetpp::cMessage n timeout pe 17
+CL id 46 tid 1 eid 46 etid 1 c omnetpp::cMessage n timeout pe 17 cid 47
+SH sm 4 sg 2621440 pd 0.1
+ES t 0.9
+
+E # 18 t 0.9 m 7 ce 16 msg 44
+CL id 44 tid 2 eid 44 etid 2 c omnetpp::cMessage n tictocMsg pe 18 cid 48
+BS id 48 tid 2 eid 48 etid 2 c omnetpp::cMessage n tictocMsg pe 18
+CL id 48 tid 2 eid 48 etid 2 c omnetpp::cMessage n tictocMsg pe 18 cid 49
+SH sm 7 sg 2621440 pd 0.1
+ES t 1
+
+E # 19 t 0.9 m 3 ce 17 msg 46
+CL id 46 tid 1 eid 46 etid 1 c omnetpp::cMessage n timeout pe 19 cid 50
+BS id 50 tid 1 eid 50 etid 1 c omnetpp::cMessage n timeout pe 19
+CL id 50 tid 1 eid 50 etid 1 c omnetpp::cMessage n timeout pe 19 cid 51
+SH sm 3 sg 2621442 pd 0.1
+ES t 1
+
+E # 20 t 1 m 6 ce 18 msg 48
+CL id 48 tid 2 eid 48 etid 2 c omnetpp::cMessage n tictocMsg pe 20 cid 52
+BS id 52 tid 2 eid 52 etid 2 c omnetpp::cMessage n tictocMsg pe 20
+CL id 52 tid 2 eid 52 etid 2 c omnetpp::cMessage n tictocMsg pe 20 cid 53
+SH sm 6 sg 2621440 pd 0.1
+ES t 1.1
+
+E # 21 t 1 m 6 ce 19 msg 50
+CL id 50 tid 1 eid 50 etid 1 c omnetpp::cMessage n timeout pe 21 cid 54
+BS id 54 tid 1 eid 54 etid 1 c omnetpp::cMessage n timeout pe 21
+CL id 54 tid 1 eid 54 etid 1 c omnetpp::cMessage n timeout pe 21 cid 55
+SH sm 6 sg 2621441 pd 0.1
+ES t 1.1
+
+E # 22 t 1.1 m 3 ce 20 msg 52
+CL id 52 tid 2 eid 52 etid 2 c omnetpp::cMessage n tictocMsg pe 22 cid 56
+BS id 56 tid 2 eid 56 etid 2 c omnetpp::cMessage n tictocMsg pe 22
+CL id 56 tid 2 eid 56 etid 2 c omnetpp::cMessage n tictocMsg pe 22 cid 57
+SH sm 3 sg 2621441 pd 0.1
+ES t 1.2
+
+E # 23 t 1.1 m 5 ce 21 msg 54
+BS id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n event pe 0
+ES t 1.321056066395
+- INFO : Sending delay signal
+
+E # 24 t 1.2 m 4 ce 22 msg 56
+CL id 56 tid 2 eid 56 etid 2 c omnetpp::cMessage n tictocMsg pe 24 cid 58
+BS id 58 tid 2 eid 58 etid 2 c omnetpp::cMessage n tictocMsg pe 24
+CL id 58 tid 2 eid 58 etid 2 c omnetpp::cMessage n tictocMsg pe 24 cid 59
+SH sm 4 sg 2621440 pd 0.1
+ES t 1.3
+
+E # 25 t 1.3 m 3 ce 24 msg 58
+CL id 58 tid 2 eid 58 etid 2 c omnetpp::cMessage n tictocMsg pe 25 cid 60
+BS id 60 tid 2 eid 60 etid 2 c omnetpp::cMessage n tictocMsg pe 25
+CL id 60 tid 2 eid 60 etid 2 c omnetpp::cMessage n tictocMsg pe 25 cid 61
+SH sm 3 sg 2621441 pd 0.1
+ES t 1.4
+
+E # 26 t 1.321056066395 m 5 ce 23 msg 8
+- INFO (Tic)Tictoc.tic[3]: Received message timeout, sending it out again
+SE e 1 c 9 m "send()/sendDelayed(): No gate index specified when accessing vector gate 'out'"
+DM id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n tictocMsg pe 0
+DM id 14 tid 1 eid 14 etid 1 c omnetpp::cMessage n timeout pe 1
+DM id 16 tid 2 eid 16 etid 2 c omnetpp::cMessage n tictocMsg pe 2
+DM id 18 tid 1 eid 18 etid 1 c omnetpp::cMessage n timeout pe 3
+DM id 20 tid 2 eid 20 etid 2 c omnetpp::cMessage n tictocMsg pe 4
+DM id 22 tid 1 eid 22 etid 1 c omnetpp::cMessage n timeout pe 5
+DM id 24 tid 2 eid 24 etid 2 c omnetpp::cMessage n tictocMsg pe 6
+DM id 26 tid 1 eid 26 etid 1 c omnetpp::cMessage n timeout pe 7
+DM id 28 tid 2 eid 28 etid 2 c omnetpp::cMessage n tictocMsg pe 8
+DM id 30 tid 1 eid 30 etid 1 c omnetpp::cMessage n timeout pe 9
+DM id 32 tid 2 eid 32 etid 2 c omnetpp::cMessage n tictocMsg pe 10
+DM id 34 tid 1 eid 34 etid 1 c omnetpp::cMessage n timeout pe 11
+DM id 36 tid 2 eid 36 etid 2 c omnetpp::cMessage n tictocMsg pe 12
+DM id 38 tid 1 eid 38 etid 1 c omnetpp::cMessage n timeout pe 13
+DM id 40 tid 2 eid 40 etid 2 c omnetpp::cMessage n tictocMsg pe 14
+DM id 42 tid 1 eid 42 etid 1 c omnetpp::cMessage n timeout pe 15
+DM id 44 tid 2 eid 44 etid 2 c omnetpp::cMessage n tictocMsg pe 16
+DM id 46 tid 1 eid 46 etid 1 c omnetpp::cMessage n timeout pe 17
+DM id 48 tid 2 eid 48 etid 2 c omnetpp::cMessage n tictocMsg pe 18
+DM id 50 tid 1 eid 50 etid 1 c omnetpp::cMessage n timeout pe 19
+DM id 52 tid 2 eid 52 etid 2 c omnetpp::cMessage n tictocMsg pe 20
+DM id 54 tid 1 eid 54 etid 1 c omnetpp::cMessage n timeout pe 21
+DM id 56 tid 2 eid 56 etid 2 c omnetpp::cMessage n tictocMsg pe 22
+DM id 58 tid 2 eid 58 etid 2 c omnetpp::cMessage n tictocMsg pe 24
+DM id 60 tid 2 eid 60 etid 2 c omnetpp::cMessage n tictocMsg pe 25

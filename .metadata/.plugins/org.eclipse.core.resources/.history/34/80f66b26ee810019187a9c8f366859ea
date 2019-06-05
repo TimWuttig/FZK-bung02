@@ -1,0 +1,4 @@
+[General]
+network = MasterSlave
+MasterSlave.master.master = true
+MasterSlave.*.master = false

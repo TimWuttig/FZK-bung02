@@ -1,0 +1,20 @@
+#include<string.h>
+#include<omnetpp.h>
+
+using namespace omnetpp;
+
+class NodeCmp : public cComponent {
+
+    protected:
+        virtual void initialize() override;
+        virtual void handleMessage(cMessage *msg) override;
+        virtual void masterBehavior(cMessage *msg);
+        virtual void slaveBehavior(cMessage *msg);
+        virtual void finish() override;
+};
+
+Define_Module(NodeCmp);
+
+void StampNode::handleMessage(cMessage *msg) {
+
+}

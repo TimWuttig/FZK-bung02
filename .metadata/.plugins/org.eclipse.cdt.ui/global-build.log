@@ -1,0 +1,1534 @@
+09:21:32 **** Build of configuration release for project tictoc ****
+make MODE=release all 
+txc1.cc
+Creating executable: out/gcc-release//tictoc
+09:23:54 **** Incremental Build of configuration debug for project tictoc ****
+make MODE=debug all 
+txc1.cc
+Creating executable: out/gcc-debug//tictoc_dbg
+09:25:19 **** Incremental Build of configuration debug for project tictoc ****
+make MODE=debug all 
+txc1.cc
+Creating executable: out/gcc-debug//tictoc_dbg
+09:26:13 **** Incremental Build of configuration debug for project tictoc ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+09:27:19 **** Incremental Build of configuration debug for project tictoc ****
+make MODE=debug all 
+txc1.cc
+Creating executable: out/gcc-debug//tictoc_dbg
+09:29:30 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc1.cc
+Creating executable: out/gcc-release//tictoc
+09:30:19 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:30:44 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:30:49 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:31:01 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:31:39 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:32:12 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:32:33 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:33:04 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:33:29 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:33:56 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:38:23 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:38:47 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:40:23 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc2.cc
+Creating executable: out/gcc-release//tictoc
+09:42:38 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc2.cc
+Creating executable: out/gcc-release//tictoc
+10:11:49 **** Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+MSGC: prior_message.msg
+node.cc
+node.cc:9:9: error: ‘string’ does not name a type; did you mean ‘stdin’?
+         string role;
+         ^~~~~~
+         stdin
+node.cc: In function ‘void initialize()’:
+node.cc:17:5: error: ‘role’ was not declared in this scope
+     role = par("role");
+     ^~~~
+node.cc:17:5: note: suggested alternative: ‘Node’
+     role = par("role");
+     ^~~~
+     Node
+node.cc:17:12: error: ‘par’ was not declared in this scope
+     role = par("role");
+            ^~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+08:17:04 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc1.cc
+Creating executable: out/gcc-release//tictoc
+08:17:48 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc1.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from txc1.cc:2:
+txc1.cc: In function ‘omnetpp::cObject* __factoryfunc_14()’:
+txc1.cc:14:15: error: ‘Txc1’ does not name a type; did you mean ‘Txc’?
+ Define_Module(Txc1);
+               ^
+txc1.cc: In function ‘void* __castfunc_14(omnetpp::cObject*)’:
+txc1.cc:14:15: error: ‘Txc1’ does not name a type; did you mean ‘Txc’?
+ Define_Module(Txc1);
+               ^
+txc1.cc:14:1: error: expected ‘>’ before ‘*’ token
+ Define_Module(Txc1);
+ ^
+txc1.cc:14:1: error: expected ‘(’ before ‘*’ token
+txc1.cc:14:1: error: expected primary-expression before ‘>’ token
+ Define_Module(Txc1);
+ ^
+txc1.cc:14:1: error: expected ‘)’ before ‘;’ token
+ Define_Module(Txc1);
+ ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/globals.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cobjectfactory.h:20,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:30,
+                 from txc1.cc:2:
+txc1.cc: In function ‘void {anonymous}::__onstartup_func_14()’:
+txc1.cc:14:15: error: ‘Txc1’ was not declared in this scope
+ Define_Module(Txc1);
+               ^
+txc1.cc:14:15: note: suggested alternative: ‘Txc’
+txc1.cc: At global scope:
+txc1.cc:16:6: error: ‘Txc1’ has not been declared
+ void Txc1::initialize()
+      ^~~~
+txc1.cc: In function ‘void initialize()’:
+txc1.cc:18:22: error: ‘getName’ was not declared in this scope
+     if(strcmp("tic", getName()) == 0){
+                      ^~~~~~~
+txc1.cc:18:22: note: suggested alternative: ‘getdate’
+     if(strcmp("tic", getName()) == 0){
+                      ^~~~~~~
+                      getdate
+txc1.cc:21:9: error: ‘send’ was not declared in this scope
+         send(msg, "out");
+         ^~~~
+txc1.cc:21:9: note: suggested alternative: ‘sync’
+         send(msg, "out");
+         ^~~~
+         sync
+txc1.cc: At global scope:
+txc1.cc:25:6: error: ‘Txc1’ has not been declared
+ void Txc1::handleMessage(cMessage *msg){
+      ^~~~
+txc1.cc: In function ‘void handleMessage(omnetpp::cMessage*)’:
+txc1.cc:27:5: error: ‘send’ was not declared in this scope
+     send(msg, "out");
+     ^~~~
+txc1.cc:27:5: note: suggested alternative: ‘sync’
+     send(msg, "out");
+     ^~~~
+     sync
+make: *** [out/gcc-release//txc1.o] Error 1
+Makefile:102: recipe for target 'out/gcc-release//txc1.o' failed
+08:18:39 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:25:02 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:26:42 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:30:49 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+txc.cc: In member function ‘virtual void Txc::initialize()’:
+txc.cc:21:29: error: ambiguous overload for ‘operator==’ (operand types are ‘omnetpp::cPar’ and ‘bool’)
+     if(par("sendMsgOnInit") == true){
+        ~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+txc.cc:21:29: note: candidate: operator==(int, int) <built-in>
+txc.cc:21:29: note: candidate: operator==(unsigned int, int) <built-in>
+txc.cc:21:29: note: candidate: operator==(long int, int) <built-in>
+txc.cc:21:29: note: candidate: operator==(long unsigned int, int) <built-in>
+txc.cc:21:29: note: candidate: operator==(long long int, int) <built-in>
+txc.cc:21:29: note: candidate: operator==(long long unsigned int, int) <built-in>
+txc.cc:21:29: note: candidate: operator==(double, int) <built-in>
+txc.cc:21:29: note: candidate: operator==(long double, int) <built-in>
+Makefile:102: recipe for target 'out/gcc-release//txc.o' failed
+make: *** [out/gcc-release//txc.o] Error 1
+08:32:51 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:34:01 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+08:36:36 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+08:40:31 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:41:25 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:42:12 **** Incremental Build of configuration debug for project tictoc ****
+make MODE=debug all 
+txc.cc
+Creating executable: out/gcc-debug//tictoc_dbg
+08:43:40 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:44:02 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:45:31 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+txc.cc: In member function ‘virtual void Txc::initialize()’:
+txc.cc:28:14: error: ‘msg’ was not declared in this scope
+         send(msg, "out");
+              ^~~
+make: *** [out/gcc-release//txc.o] Error 1
+Makefile:102: recipe for target 'out/gcc-release//txc.o' failed
+08:45:41 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:47:41 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:51:41 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:52:05 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+08:53:01 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+08:55:16 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+08:56:51 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:04:33 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+txc.cc: In member function ‘virtual void Txc::handleMessage(omnetpp::cMessage*)’:
+txc.cc:46:20: error: ‘simtime’ was not declared in this scope
+         scheduleAt(simtime() + tout, timeout);
+                    ^~~~~~~
+txc.cc:46:20: note: suggested alternative: ‘stime’
+         scheduleAt(simtime() + tout, timeout);
+                    ^~~~~~~
+                    stime
+txc.cc:49:20: error: ‘simtime’ was not declared in this scope
+         scheduleAt(simtime() + tout, timeout);
+                    ^~~~~~~
+txc.cc:49:20: note: suggested alternative: ‘stime’
+         scheduleAt(simtime() + tout, timeout);
+                    ^~~~~~~
+                    stime
+Makefile:102: recipe for target 'out/gcc-release//txc.o' failed
+make: *** [out/gcc-release//txc.o] Error 1
+09:04:54 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:07:11 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:07:42 **** Incremental Build of configuration debug for project tictoc ****
+make MODE=debug all 
+txc.cc
+Creating executable: out/gcc-debug//tictoc_dbg
+09:08:59 **** Incremental Build of configuration debug for project tictoc ****
+make MODE=debug all 
+txc.cc
+Creating executable: out/gcc-debug//tictoc_dbg
+09:10:02 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+txc.cc: In member function ‘virtual void Txc::initialize()’:
+txc.cc:36:12: error: unable to find numeric literal operator ‘operator""s’
+     tout = 5.0s;
+            ^~~~
+txc.cc:36:12: note: use -std=gnu++11 or -fext-numeric-literals to enable more built-in suffixes
+make: *** [out/gcc-release//txc.o] Error 1
+Makefile:102: recipe for target 'out/gcc-release//txc.o' failed
+09:10:22 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:11:45 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:12:37 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:14:38 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:24:30 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+txc.cc:19:22: error: ‘virtual void Txc::forwardMsg(omnetpp::cMessage*)’ marked ‘override’, but does not override
+         virtual void forwardMsg(cMessage *msg) override;
+                      ^~~~~~~~~~
+make: *** [out/gcc-release//txc.o] Error 1
+Makefile:102: recipe for target 'out/gcc-release//txc.o' failed
+09:25:24 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+txc.cc:19:22: error: ‘virtual void Txc::forwardMsg(omnetpp::cMessage*)’ marked ‘override’, but does not override
+         virtual void forwardMsg(cMessage *msg) override;
+                      ^~~~~~~~~~
+txc.cc: In function ‘void forwardMsg(omnetpp::cMessage*)’:
+txc.cc:72:27: error: ‘gateSize’ was not declared in this scope
+     int k = intuniform(0, gateSize("out") - 1);
+                           ^~~~~~~~
+txc.cc:72:27: note: suggested alternative: ‘getegid’
+     int k = intuniform(0, gateSize("out") - 1);
+                           ^~~~~~~~
+                           getegid
+txc.cc:74:5: error: ‘send’ was not declared in this scope
+     send(dub, "out", k);
+     ^~~~
+txc.cc:74:5: note: suggested alternative: ‘sync’
+     send(dub, "out", k);
+     ^~~~
+     sync
+make: *** [out/gcc-release//txc.o] Error 1
+Makefile:102: recipe for target 'out/gcc-release//txc.o' failed
+09:26:20 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+txc.cc:19:22: error: ‘virtual void Txc::forwardMsg(omnetpp::cMessage*)’ marked ‘override’, but does not override
+         virtual void forwardMsg(cMessage *msg) override;
+                      ^~~~~~~~~~
+make: *** [out/gcc-release//txc.o] Error 1
+Makefile:102: recipe for target 'out/gcc-release//txc.o' failed
+09:26:49 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:28:02 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:28:53 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:29:59 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:30:29 **** Incremental Build of configuration release for project tictoc ****
+make MODE=release all 
+txc.cc
+Creating executable: out/gcc-release//tictoc
+09:34:40 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In function ‘void initialize()’:
+node.cc:17:5: error: ‘master’ was not declared in this scope
+     master = par("master");
+     ^~~~~~
+node.cc:17:5: note: suggested alternative: ‘system’
+     master = par("master");
+     ^~~~~~
+     system
+node.cc:17:14: error: ‘par’ was not declared in this scope
+     master = par("master");
+              ^~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+09:35:00 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+prior_message_m.cc
+Creating executable: out/gcc-release//fzk_uebung02
+out/gcc-release//node.o:(.data.rel.ro._ZTV4Node[_ZTV4Node]+0x4c0): undefined reference to `Node::handleMessage(omnetpp::cMessage*)'
+collect2: error: ld returned 1 exit status
+Makefile:94: recipe for target 'out/gcc-release//fzk_uebung02' failed
+make: *** [out/gcc-release//fzk_uebung02] Error 1
+09:38:33 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+Creating executable: out/gcc-release//fzk_uebung02
+out/gcc-release//node.o:(.data.rel.ro._ZTV4Node[_ZTV4Node]+0x4c0): undefined reference to `Node::handleMessage(omnetpp::cMessage*)'
+collect2: error: ld returned 1 exit status
+make: *** [out/gcc-release//fzk_uebung02] Error 1
+Makefile:94: recipe for target 'out/gcc-release//fzk_uebung02' failed
+09:41:00 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+09:41:35 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from node.cc:1:
+node.cc: In function ‘omnetpp::cObject* __factoryfunc_16()’:
+node.cc:16:15: error: ‘omnetpp::cModule’ is an inaccessible base of ‘Node’
+ Define_Module(Node);
+               ^
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+09:42:41 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from node.cc:1:
+node.cc: In function ‘omnetpp::cObject* __factoryfunc_16()’:
+node.cc:16:15: error: ‘omnetpp::cModule’ is an inaccessible base of ‘Node’
+ Define_Module(Node);
+               ^
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+09:43:24 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from node.cc:1:
+node.cc: In function ‘omnetpp::cObject* __factoryfunc_16()’:
+node.cc:16:15: error: ‘omnetpp::cModule’ is an inaccessible base of ‘Node’
+ Define_Module(Node);
+               ^
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+09:44:03 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+09:44:37 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:46:54 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:48:12 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:49:36 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+09:51:52 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::handleMessage(omnetpp::cMessage*)’:
+node.cc:26:33: error: expected primary-expression before ‘*’ token
+         masterBehavior(cMessage *msg);
+                                 ^
+node.cc:28:32: error: expected primary-expression before ‘*’ token
+         slaveBehavior(cMessage *msg);
+                                ^
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+09:52:11 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:00:34 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::initialize()’:
+node.cc:23:33: error: no match for ‘operator=’ (operand types are ‘omnetpp::cMessage’ and ‘omnetpp::cMessage*’)
+     timer = new cMessage("timer");
+                                 ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cchannel.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:35,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:190:15: note: candidate: omnetpp::cMessage& omnetpp::cMessage::operator=(const omnetpp::cMessage&)
+     cMessage& operator=(const cMessage& msg);
+               ^~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:190:15: note:   no known conversion for argument 1 from ‘omnetpp::cMessage*’ to ‘const omnetpp::cMessage&’
+node.cc:25:37: error: no matching function for call to ‘Node::scheduleAt(const omnetpp::SimTime, omnetpp::cMessage&)’
+     scheduleAt(simTime()+ 0.8, timer);
+                                     ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:100:0,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:358:18: note: candidate: virtual void omnetpp::cSimpleModule::scheduleAt(omnetpp::simtime_t, omnetpp::cMessage*)
+     virtual void scheduleAt(simtime_t t, cMessage *msg);
+                  ^~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:358:18: note:   no known conversion for argument 2 from ‘omnetpp::cMessage’ to ‘omnetpp::cMessage*’
+node.cc: In member function ‘virtual void Node::masterBehavior(omnetpp::cMessage*)’:
+node.cc:37:12: error: no match for ‘operator==’ (operand types are ‘omnetpp::cMessage*’ and ‘omnetpp::cMessage’)
+     if(msg == timer){
+        ~~~~^~~~~~~~
+node.cc:41:52: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+             cMessage myMsg = new PriorMessage(prior);
+                                                    ^
+In file included from node.cc:3:0:
+./prior_message_m.h:44:5: note:   initializing argument 1 of ‘PriorMessage::PriorMessage(const char*, short int)’
+     PriorMessage(const char *name=nullptr, short kind=0);
+     ^~~~~~~~~~~~
+node.cc:41:30: error: conversion from ‘PriorMessage*’ to non-scalar type ‘omnetpp::cMessage’ requested
+             cMessage myMsg = new PriorMessage(prior);
+                              ^~~~~~~~~~~~~~~~~~~~~~~
+node.cc:42:33: error: no matching function for call to ‘Node::send(omnetpp::cMessage&, const char [4], int&)’
+             send(myMsg, "out", i);
+                                 ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:100:0,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:221:18: note: candidate: virtual void omnetpp::cSimpleModule::send(omnetpp::cMessage*, int)
+     virtual void send(cMessage *msg, int gateid)  {return sendDelayed(msg, SIMTIME_ZERO, gateid);}
+                  ^~~~
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:221:18: note:   candidate expects 2 arguments, 3 provided
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:227:18: note: candidate: virtual void omnetpp::cSimpleModule::send(omnetpp::cMessage*, const char*, int)
+     virtual void send(cMessage *msg, const char *gatename, int gateindex=-1)  {return sendDelayed(msg, SIMTIME_ZERO, gatename, gateindex);}
+                  ^~~~
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:227:18: note:   no known conversion for argument 1 from ‘omnetpp::cMessage’ to ‘omnetpp::cMessage*’
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:100:0,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:232:18: note: candidate: virtual void omnetpp::cSimpleModule::send(omnetpp::cMessage*, omnetpp::cGate*)
+     virtual void send(cMessage *msg, cGate *outputgate)  {return sendDelayed(msg, SIMTIME_ZERO, outputgate);}
+                  ^~~~
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:232:18: note:   candidate expects 2 arguments, 3 provided
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+10:01:47 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::initialize()’:
+node.cc:23:33: error: no match for ‘operator=’ (operand types are ‘omnetpp::cMessage’ and ‘omnetpp::cMessage*’)
+     timer = new cMessage("timer");
+                                 ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cchannel.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:35,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:190:15: note: candidate: omnetpp::cMessage& omnetpp::cMessage::operator=(const omnetpp::cMessage&)
+     cMessage& operator=(const cMessage& msg);
+               ^~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:190:15: note:   no known conversion for argument 1 from ‘omnetpp::cMessage*’ to ‘const omnetpp::cMessage&’
+node.cc:25:37: error: no matching function for call to ‘Node::scheduleAt(const omnetpp::SimTime, omnetpp::cMessage&)’
+     scheduleAt(simTime()+ 0.8, timer);
+                                     ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:100:0,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:358:18: note: candidate: virtual void omnetpp::cSimpleModule::scheduleAt(omnetpp::simtime_t, omnetpp::cMessage*)
+     virtual void scheduleAt(simtime_t t, cMessage *msg);
+                  ^~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:358:18: note:   no known conversion for argument 2 from ‘omnetpp::cMessage’ to ‘omnetpp::cMessage*’
+node.cc: In member function ‘virtual void Node::masterBehavior(omnetpp::cMessage*)’:
+node.cc:37:12: error: no match for ‘operator==’ (operand types are ‘omnetpp::cMessage*’ and ‘omnetpp::cMessage’)
+     if(msg == timer){
+        ~~~~^~~~~~~~
+node.cc:41:20: error: ‘short int omnetpp::cEvent::priority’ is private within this context
+             myMsg->priority = intuniform(0, 3);
+                    ^~~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:20:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cchannel.h:21,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:35,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/cevent.h:49:11: note: declared private here
+     short priority;            // priority -- used for scheduling events with equal arrival times
+           ^~~~~~~~
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+10:03:05 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::initialize()’:
+node.cc:23:33: error: no match for ‘operator=’ (operand types are ‘omnetpp::cMessage’ and ‘omnetpp::cMessage*’)
+     timer = new cMessage("timer");
+                                 ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cchannel.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:35,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:190:15: note: candidate: omnetpp::cMessage& omnetpp::cMessage::operator=(const omnetpp::cMessage&)
+     cMessage& operator=(const cMessage& msg);
+               ^~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:190:15: note:   no known conversion for argument 1 from ‘omnetpp::cMessage*’ to ‘const omnetpp::cMessage&’
+node.cc:25:37: error: no matching function for call to ‘Node::scheduleAt(const omnetpp::SimTime, omnetpp::cMessage&)’
+     scheduleAt(simTime()+ 0.8, timer);
+                                     ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:100:0,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:358:18: note: candidate: virtual void omnetpp::cSimpleModule::scheduleAt(omnetpp::simtime_t, omnetpp::cMessage*)
+     virtual void scheduleAt(simtime_t t, cMessage *msg);
+                  ^~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:358:18: note:   no known conversion for argument 2 from ‘omnetpp::cMessage’ to ‘omnetpp::cMessage*’
+node.cc: In member function ‘virtual void Node::masterBehavior(omnetpp::cMessage*)’:
+node.cc:37:12: error: no match for ‘operator==’ (operand types are ‘omnetpp::cMessage*’ and ‘omnetpp::cMessage’)
+     if(msg == timer){
+        ~~~~^~~~~~~~
+node.cc:41:20: error: ‘class omnetpp::cMessage’ has no member named ‘setPriority’; did you mean ‘priority’?
+             myMsg->setPriority = intuniform(0, 3);
+                    ^~~~~~~~~~~
+                    priority
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+10:04:38 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::initialize()’:
+node.cc:23:33: error: no match for ‘operator=’ (operand types are ‘omnetpp::cMessage’ and ‘omnetpp::cMessage*’)
+     timer = new cMessage("timer");
+                                 ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cchannel.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:35,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:190:15: note: candidate: omnetpp::cMessage& omnetpp::cMessage::operator=(const omnetpp::cMessage&)
+     cMessage& operator=(const cMessage& msg);
+               ^~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/cmessage.h:190:15: note:   no known conversion for argument 1 from ‘omnetpp::cMessage*’ to ‘const omnetpp::cMessage&’
+node.cc:25:37: error: no matching function for call to ‘Node::scheduleAt(const omnetpp::SimTime, omnetpp::cMessage&)’
+     scheduleAt(simTime()+ 0.8, timer);
+                                     ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:100:0,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:358:18: note: candidate: virtual void omnetpp::cSimpleModule::scheduleAt(omnetpp::simtime_t, omnetpp::cMessage*)
+     virtual void scheduleAt(simtime_t t, cMessage *msg);
+                  ^~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:358:18: note:   no known conversion for argument 2 from ‘omnetpp::cMessage’ to ‘omnetpp::cMessage*’
+node.cc: In member function ‘virtual void Node::masterBehavior(omnetpp::cMessage*)’:
+node.cc:37:12: error: no match for ‘operator==’ (operand types are ‘omnetpp::cMessage*’ and ‘omnetpp::cMessage’)
+     if(msg == timer){
+        ~~~~^~~~~~~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+10:05:09 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:06:31 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::masterBehavior(omnetpp::cMessage*)’:
+node.cc:44:64: error: invalid operands of types ‘const char*’ and ‘const char [10]’ to binary ‘operator+’
+             EV << "MASTER: Sended message with prio: " + prior + " to slave" + (i+1);
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+10:08:08 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:09:43 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:10:21 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:11:14 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:11:41 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:15:02 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:26:52 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:28:53 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:50:49 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:51:31 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:51:55 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:52:27 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+10:53:17 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:00:59 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:01:14 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:02:21 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:03:14 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:03:54 **** Incremental Build of configuration debug for project fzk_uebung02 ****
+make MODE=debug all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:58:30: warning: comparison with string literal results in unspecified behavior [-Waddress]
+         if(msg->getName() == "MasterMsg") {
+                              ^~~~~~~~~~~
+prior_message_m.cc
+Creating executable: out/gcc-debug//fzk_uebung02_dbg
+11:05:05 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:07:23 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In function ‘void sendMasterMsg()’:
+node.cc:56:13: error: ‘gateSize’ was not declared in this scope
+     int n = gateSize("gate");
+             ^~~~~~~~
+node.cc:56:13: note: suggested alternative: ‘getegid’
+     int n = gateSize("gate");
+             ^~~~~~~~
+             getegid
+node.cc:58:36: error: too few arguments to function ‘int omnetpp::intuniform(omnetpp::cRNG*, int, int)’
+         int prior = intuniform(0, 3);
+                                    ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:28:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:33,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/distrib.h:297:13: note: declared here
+ SIM_API int intuniform(cRNG *rng, int a, int b);
+             ^~~~~~~~~~
+node.cc:61:9: error: ‘send’ was not declared in this scope
+         send(myMsg, "gate$o", i);
+         ^~~~
+node.cc:61:9: note: suggested alternative: ‘sync’
+         send(myMsg, "gate$o", i);
+         ^~~~
+         sync
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+11:07:37 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:09:48 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:10:09 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:10:10 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:11:40 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:12:24 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:13:17 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:14:16 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:18:32 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:63:47: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+         if(strrchr(msg->getName(), "MasterMsg") != nullptr) {
+                                               ^
+In file included from /usr/include/c++/7/cstring:42:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/simutil.h:21,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:22,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from node.cc:1:
+/usr/include/string.h:245:1: note:   initializing argument 2 of ‘const char* strrchr(const char*, int)’
+ strrchr (const char *__s, int __c) __THROW
+ ^~~~~~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+11:20:12 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:21:13 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:22:00 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:62:40: error: invalid conversion from ‘omnetpp::cGate*’ to ‘int’ [-fpermissive]
+         master_id = msg->getArrivalGate();
+                     ~~~~~~~~~~~~~~~~~~~^~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+11:22:28 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:59:36: error: invalid conversion from ‘omnetpp::cGate*’ to ‘int’ [-fpermissive]
+         send(msg->dup(), "gate$o", master_id);
+                                    ^~~~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:100:0,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/csimplemodule.h:227:18: note:   initializing argument 3 of ‘virtual void omnetpp::cSimpleModule::send(omnetpp::cMessage*, const char*, int)’
+     virtual void send(cMessage *msg, const char *gatename, int gateindex=-1)  {return sendDelayed(msg, SIMTIME_ZERO, gatename, gateindex);}
+                  ^~~~
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+11:22:52 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:25:34 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:59:45: error: invalid operands of types ‘const char*’ and ‘const char [3]’ to binary ‘operator+’
+         send(msg->dup(), "gate" + master_id + "$o");
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+11:35:11 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:59:45: error: invalid operands of types ‘const char*’ and ‘const char [3]’ to binary ‘operator+’
+         send(msg->dup(), "gate" + master_id + "$o");
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~
+node.cc:63:60: error: no matching function for call to ‘Node::findGate(omnetpp::cGate*)’
+         EV << "MASTER_ID" << findGate(msg->getArrivalGate());
+                                                            ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cdisplaystring.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:43,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/cmodule.h:699:17: note: candidate: virtual int omnetpp::cModule::findGate(const char*, int) const
+     virtual int findGate(const char *gatename, int index=-1) const;
+                 ^~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/cmodule.h:699:17: note:   no known conversion for argument 1 from ‘omnetpp::cGate*’ to ‘const char*’
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+11:35:30 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:59:45: error: invalid operands of types ‘const char*’ and ‘const char [3]’ to binary ‘operator+’
+         send(msg->dup(), "gate" + master_id + "$o");
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~
+node.cc:63:63: error: no matching function for call to ‘Node::findGate(omnetpp::cGate*, int)’
+         EV << "MASTER_ID" << findGate(msg->getArrivalGate(), 0);
+                                                               ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cdisplaystring.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:43,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/cmodule.h:699:17: note: candidate: virtual int omnetpp::cModule::findGate(const char*, int) const
+     virtual int findGate(const char *gatename, int index=-1) const;
+                 ^~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/cmodule.h:699:17: note:   no known conversion for argument 1 from ‘omnetpp::cGate*’ to ‘const char*’
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+11:36:01 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:59:45: error: invalid operands of types ‘const char*’ and ‘const char [3]’ to binary ‘operator+’
+         send(msg->dup(), "gate" + master_id + "$o");
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+11:36:34 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:37:28 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:38:28 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:40:25 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:41:10 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:42:55 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:63:56: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+         char* test = msg->getArrivalGate()->getFullName();
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+11:43:47 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:44:15 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+11:45:13 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:63:21: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+         master_id = 'o';
+                     ^~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+11:45:27 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:10:32 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:11:20 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:14:31 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:63:9: error: ‘string’ was not declared in this scope
+         string gatename = myMsg->getArrivalGate()->getFullName();
+         ^~~~~~
+node.cc:63:9: note: suggested alternatives:
+In file included from /usr/include/c++/7/iosfwd:39:0,
+                 from /usr/include/c++/7/ios:38,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:20,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from node.cc:1:
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+   typedef basic_string<char>    string;
+                                 ^~~~~~
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+node.cc:64:26: error: ‘gatename’ was not declared in this scope
+         unsigned first = gatename.find("[");
+                          ^~~~~~~~
+node.cc:64:26: note: suggested alternative: ‘basename’
+         unsigned first = gatename.find("[");
+                          ^~~~~~~~
+                          basename
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+08:15:33 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:63:62: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+         char *gatename = myMsg->getArrivalGate()->getFullName();
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+node.cc:64:35: error: request for member ‘find’ in ‘gatename’, which is of non-class type ‘char*’
+         unsigned first = gatename.find("[");
+                                   ^~~~
+node.cc:65:34: error: request for member ‘find’ in ‘gatename’, which is of non-class type ‘char*’
+         unsigned last = gatename.find("]");
+                                  ^~~~
+node.cc:66:24: error: request for member ‘substr’ in ‘gatename’, which is of non-class type ‘char*’
+         EV << gatename.substr(first, last);
+                        ^~~~~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+08:16:08 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:64:35: error: request for member ‘find’ in ‘gatename’, which is of non-class type ‘char*’
+         unsigned first = gatename.find("[");
+                                   ^~~~
+node.cc:65:34: error: request for member ‘find’ in ‘gatename’, which is of non-class type ‘char*’
+         unsigned last = gatename.find("]");
+                                  ^~~~
+node.cc:66:24: error: request for member ‘substr’ in ‘gatename’, which is of non-class type ‘char*’
+         EV << gatename.substr(first, last);
+                        ^~~~~~
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+08:16:32 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:63:9: error: ‘string’ was not declared in this scope
+         string gatename = (char*) myMsg->getArrivalGate()->getFullName();
+         ^~~~~~
+node.cc:63:9: note: suggested alternatives:
+In file included from /usr/include/c++/7/iosfwd:39:0,
+                 from /usr/include/c++/7/ios:38,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:20,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from node.cc:1:
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+   typedef basic_string<char>    string;
+                                 ^~~~~~
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+node.cc:64:26: error: ‘gatename’ was not declared in this scope
+         unsigned first = gatename.find("[");
+                          ^~~~~~~~
+node.cc:64:26: note: suggested alternative: ‘basename’
+         unsigned first = gatename.find("[");
+                          ^~~~~~~~
+                          basename
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+08:16:46 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:64:35: error: request for member ‘find’ in ‘gatename’, which is of non-class type ‘char*’
+         unsigned first = gatename.find("[");
+                                   ^~~~
+node.cc:65:34: error: request for member ‘find’ in ‘gatename’, which is of non-class type ‘char*’
+         unsigned last = gatename.find("]");
+                                  ^~~~
+node.cc:66:24: error: request for member ‘substr’ in ‘gatename’, which is of non-class type ‘char*’
+         EV << gatename.substr(first, last);
+                        ^~~~~~
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+08:22:36 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:60:40: error: invalid conversion from ‘omnetpp::cMessage*’ to ‘PriorMessage*’ [-fpermissive]
+         PriorMessage *answer = msg->dup();
+                                ~~~~~~~~^~
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+make: *** [out/gcc-release//node.o] Error 1
+08:22:58 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:23:39 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:24:09 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:24:28 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:25:18 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:25:34 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:26:43 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:69:59: error: cannot convert ‘std::__cxx11::basic_string<char>’ to ‘const char*’ for argument ‘1’ to ‘int atoi(const char*)’
+         EV << atoi(gatename.substr(start + 1, end - start));
+                                                           ^
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+08:27:10 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::slaveBehavior(omnetpp::cMessage*)’:
+node.cc:69:64: error: cannot convert ‘std::__cxx11::basic_string<char>’ to ‘const char*’ for argument ‘1’ to ‘int atoi(const char*)’
+         EV << std::atoi(gatename.substr(start + 1, end - start));
+                                                                ^
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+08:27:52 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:28:26 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:33:51 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:35:41 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+08:42:17 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+node.cc: In member function ‘virtual void Node::masterBehavior(omnetpp::cMessage*)’:
+node.cc:49:50: error: no matching function for call to ‘Node::recordScalar(const char [12], int [4])’
+             recordScalar("#priorities", prior_num);
+                                                  ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:33:0,
+                 from node.cc:1:
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:1043:18: note: candidate: virtual void omnetpp::cComponent::recordScalar(const char*, double, const char*)
+     virtual void recordScalar(const char *name, double value, const char *unit=nullptr);
+                  ^~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:1043:18: note:   no known conversion for argument 2 from ‘int [4]’ to ‘double’
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:1048:18: note: candidate: virtual void omnetpp::cComponent::recordScalar(const char*, omnetpp::SimTime, const char*)
+     virtual void recordScalar(const char *name, SimTime value, const char *unit=nullptr) {recordScalar(name, value.dbl(), unit);}
+                  ^~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:1048:18: note:   no known conversion for argument 2 from ‘int [4]’ to ‘omnetpp::SimTime’
+make: *** [out/gcc-release//node.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//node.o' failed
+08:44:09 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:45:53 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:50:42 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:53:38 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:54:03 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+Creating executable: out/gcc-release//fzk_uebung02
+08:55:06 **** Incremental Build of configuration debug for project fzk_uebung02 ****
+make MODE=debug all 
+node.cc
+Creating executable: out/gcc-debug//fzk_uebung02_dbg
+08:55:54 **** Incremental Build of configuration debug for project fzk_uebung02 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+08:57:01 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+08:57:42 **** Incremental Build of configuration debug for project fzk_uebung02 ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+09:35:10 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+nodeCmp.cc
+nodeCmp.cc:10:22: error: ‘virtual void NodeCmp::handleMessage(omnetpp::cMessage*)’ marked ‘override’, but does not override
+         virtual void handleMessage(cMessage *msg) override;
+                      ^~~~~~~~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from nodeCmp.cc:2:
+nodeCmp.cc: In function ‘omnetpp::cObject* __factoryfunc_16()’:
+nodeCmp.cc:16:15: error: invalid new-expression of abstract class type ‘NodeCmp’
+ Define_Module(NodeCmp);
+               ^
+nodeCmp.cc:6:7: note:   because the following virtual functions are pure within ‘NodeCmp’:
+ class NodeCmp : public cComponent {
+       ^~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:33:0,
+                 from nodeCmp.cc:2:
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:173:18: note: 	virtual void omnetpp::cComponent::callRefreshDisplay()
+     virtual void callRefreshDisplay() = 0;
+                  ^~~~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:340:26: note: 	virtual omnetpp::cProperties* omnetpp::cComponent::getProperties() const
+     virtual cProperties *getProperties() const = 0;
+                          ^~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:377:27: note: 	virtual omnetpp::cComponent::ComponentKind omnetpp::cComponent::getComponentKind() const
+     virtual ComponentKind getComponentKind() const = 0;
+                           ^~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:394:22: note: 	virtual omnetpp::cModule* omnetpp::cComponent::getParentModule() const
+     virtual cModule *getParentModule() const = 0;
+                      ^~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:412:18: note: 	virtual void omnetpp::cComponent::callInitialize()
+     virtual void callInitialize() = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:418:18: note: 	virtual bool omnetpp::cComponent::callInitialize(int)
+     virtual bool callInitialize(int stage) = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:424:18: note: 	virtual void omnetpp::cComponent::callFinish()
+     virtual void callFinish() = 0;
+                  ^~~~~~~~~~
+nodeCmp.cc: At global scope:
+nodeCmp.cc:18:6: error: ‘StampNode’ has not been declared
+ void StampNode::handleMessage(cMessage *msg) {
+      ^~~~~~~~~
+Makefile:103: recipe for target 'out/gcc-release//nodeCmp.o' failed
+make: *** [out/gcc-release//nodeCmp.o] Error 1
+09:36:24 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+nodeCmp.cc
+nodeCmp.cc:10:22: error: ‘virtual void NodeCmp::handleMessage(omnetpp::cMessage*)’ marked ‘override’, but does not override
+         virtual void handleMessage(cMessage *msg) override;
+                      ^~~~~~~~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from nodeCmp.cc:2:
+nodeCmp.cc: In function ‘omnetpp::cObject* __factoryfunc_16()’:
+nodeCmp.cc:16:15: error: invalid new-expression of abstract class type ‘NodeCmp’
+ Define_Module(NodeCmp);
+               ^
+nodeCmp.cc:6:7: note:   because the following virtual functions are pure within ‘NodeCmp’:
+ class NodeCmp : public cComponent {
+       ^~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:33:0,
+                 from nodeCmp.cc:2:
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:173:18: note: 	virtual void omnetpp::cComponent::callRefreshDisplay()
+     virtual void callRefreshDisplay() = 0;
+                  ^~~~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:340:26: note: 	virtual omnetpp::cProperties* omnetpp::cComponent::getProperties() const
+     virtual cProperties *getProperties() const = 0;
+                          ^~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:377:27: note: 	virtual omnetpp::cComponent::ComponentKind omnetpp::cComponent::getComponentKind() const
+     virtual ComponentKind getComponentKind() const = 0;
+                           ^~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:394:22: note: 	virtual omnetpp::cModule* omnetpp::cComponent::getParentModule() const
+     virtual cModule *getParentModule() const = 0;
+                      ^~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:412:18: note: 	virtual void omnetpp::cComponent::callInitialize()
+     virtual void callInitialize() = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:418:18: note: 	virtual bool omnetpp::cComponent::callInitialize(int)
+     virtual bool callInitialize(int stage) = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:424:18: note: 	virtual void omnetpp::cComponent::callFinish()
+     virtual void callFinish() = 0;
+                  ^~~~~~~~~~
+nodeCmp.cc: At global scope:
+nodeCmp.cc:18:6: error: ‘StampNode’ has not been declared
+ void StampNode::handleMessage(cMessage *msg) {
+      ^~~~~~~~~
+make: *** [out/gcc-release//nodeCmp.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//nodeCmp.o' failed
+09:37:21 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+nodeCmp.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/globals.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cobjectfactory.h:20,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:30,
+                 from nodeCmp.cc:2:
+nodeCmp.cc:11:1: error: expected unqualified-id before ‘namespace’
+ Define_Module(NodeCmp);
+ ^
+nodeCmp.cc:13:6: error: ‘StampNode’ has not been declared
+ void StampNode::initialize() {
+      ^~~~~~~~~
+nodeCmp.cc:13:6: error: ‘void NodeCmp::initialize()’ cannot be overloaded
+nodeCmp.cc:9:22: error: with ‘virtual void NodeCmp::initialize()’
+         virtual void initialize() override;
+                      ^~~~~~~~~~
+nodeCmp.cc:15:1: error: expected ‘}’ at end of input
+ }
+ ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from nodeCmp.cc:2:
+nodeCmp.cc: In static member function ‘static omnetpp::cObject* NodeCmp::__factoryfunc_11()’:
+nodeCmp.cc:11:15: error: invalid new-expression of abstract class type ‘NodeCmp’
+ Define_Module(NodeCmp);
+               ^
+nodeCmp.cc:6:7: note:   because the following virtual functions are pure within ‘NodeCmp’:
+ class NodeCmp : public cComponent {
+       ^~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:33:0,
+                 from nodeCmp.cc:2:
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:173:18: note: 	virtual void omnetpp::cComponent::callRefreshDisplay()
+     virtual void callRefreshDisplay() = 0;
+                  ^~~~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:340:26: note: 	virtual omnetpp::cProperties* omnetpp::cComponent::getProperties() const
+     virtual cProperties *getProperties() const = 0;
+                          ^~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:377:27: note: 	virtual omnetpp::cComponent::ComponentKind omnetpp::cComponent::getComponentKind() const
+     virtual ComponentKind getComponentKind() const = 0;
+                           ^~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:394:22: note: 	virtual omnetpp::cModule* omnetpp::cComponent::getParentModule() const
+     virtual cModule *getParentModule() const = 0;
+                      ^~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:412:18: note: 	virtual void omnetpp::cComponent::callInitialize()
+     virtual void callInitialize() = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:418:18: note: 	virtual bool omnetpp::cComponent::callInitialize(int)
+     virtual bool callInitialize(int stage) = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:424:18: note: 	virtual void omnetpp::cComponent::callFinish()
+     virtual void callFinish() = 0;
+                  ^~~~~~~~~~
+nodeCmp.cc: At global scope:
+nodeCmp.cc:15:1: error: expected unqualified-id at end of input
+ }
+ ^
+Makefile:103: recipe for target 'out/gcc-release//nodeCmp.o' failed
+make: *** [out/gcc-release//nodeCmp.o] Error 1
+09:38:28 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+nodeCmp.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/globals.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cobjectfactory.h:20,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:30,
+                 from nodeCmp.cc:2:
+nodeCmp.cc:11:1: error: expected unqualified-id before ‘namespace’
+ Define_Module(NodeCmp);
+ ^
+nodeCmp.cc:13:6: error: ‘StampNode’ has not been declared
+ void StampNode::initialize() {
+      ^~~~~~~~~
+nodeCmp.cc:13:6: error: ‘void NodeCmp::initialize()’ cannot be overloaded
+nodeCmp.cc:9:22: error: with ‘virtual void NodeCmp::initialize()’
+         virtual void initialize() override;
+                      ^~~~~~~~~~
+nodeCmp.cc:15:1: error: expected ‘}’ at end of input
+ }
+ ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from nodeCmp.cc:2:
+nodeCmp.cc: In static member function ‘static omnetpp::cObject* NodeCmp::__factoryfunc_11()’:
+nodeCmp.cc:11:15: error: invalid new-expression of abstract class type ‘NodeCmp’
+ Define_Module(NodeCmp);
+               ^
+nodeCmp.cc:6:7: note:   because the following virtual functions are pure within ‘NodeCmp’:
+ class NodeCmp : public cComponent {
+       ^~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:33:0,
+                 from nodeCmp.cc:2:
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:173:18: note: 	virtual void omnetpp::cComponent::callRefreshDisplay()
+     virtual void callRefreshDisplay() = 0;
+                  ^~~~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:340:26: note: 	virtual omnetpp::cProperties* omnetpp::cComponent::getProperties() const
+     virtual cProperties *getProperties() const = 0;
+                          ^~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:377:27: note: 	virtual omnetpp::cComponent::ComponentKind omnetpp::cComponent::getComponentKind() const
+     virtual ComponentKind getComponentKind() const = 0;
+                           ^~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:394:22: note: 	virtual omnetpp::cModule* omnetpp::cComponent::getParentModule() const
+     virtual cModule *getParentModule() const = 0;
+                      ^~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:412:18: note: 	virtual void omnetpp::cComponent::callInitialize()
+     virtual void callInitialize() = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:418:18: note: 	virtual bool omnetpp::cComponent::callInitialize(int)
+     virtual bool callInitialize(int stage) = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:424:18: note: 	virtual void omnetpp::cComponent::callFinish()
+     virtual void callFinish() = 0;
+                  ^~~~~~~~~~
+nodeCmp.cc: At global scope:
+nodeCmp.cc:15:1: error: expected unqualified-id at end of input
+ }
+ ^
+make: *** [out/gcc-release//nodeCmp.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//nodeCmp.o' failed
+09:38:52 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+nodeCmp.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/globals.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cobjectfactory.h:20,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:30,
+                 from nodeCmp.cc:2:
+nodeCmp.cc:11:1: error: expected unqualified-id before ‘namespace’
+ Define_Module(NodeCmp);
+ ^
+nodeCmp.cc:13:6: error: ‘StampNode’ has not been declared
+ void StampNode::initialize() {
+      ^~~~~~~~~
+nodeCmp.cc:13:6: error: ‘void NodeCmp::initialize()’ cannot be overloaded
+nodeCmp.cc:9:22: error: with ‘virtual void NodeCmp::initialize()’
+         virtual void initialize() override;
+                      ^~~~~~~~~~
+nodeCmp.cc:15:1: error: expected ‘}’ at end of input
+ }
+ ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from nodeCmp.cc:2:
+nodeCmp.cc: In static member function ‘static omnetpp::cObject* NodeCmp::__factoryfunc_11()’:
+nodeCmp.cc:11:15: error: invalid new-expression of abstract class type ‘NodeCmp’
+ Define_Module(NodeCmp);
+               ^
+nodeCmp.cc:6:7: note:   because the following virtual functions are pure within ‘NodeCmp’:
+ class NodeCmp : public cComponent {
+       ^~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:33:0,
+                 from nodeCmp.cc:2:
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:173:18: note: 	virtual void omnetpp::cComponent::callRefreshDisplay()
+     virtual void callRefreshDisplay() = 0;
+                  ^~~~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:340:26: note: 	virtual omnetpp::cProperties* omnetpp::cComponent::getProperties() const
+     virtual cProperties *getProperties() const = 0;
+                          ^~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:377:27: note: 	virtual omnetpp::cComponent::ComponentKind omnetpp::cComponent::getComponentKind() const
+     virtual ComponentKind getComponentKind() const = 0;
+                           ^~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:394:22: note: 	virtual omnetpp::cModule* omnetpp::cComponent::getParentModule() const
+     virtual cModule *getParentModule() const = 0;
+                      ^~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:412:18: note: 	virtual void omnetpp::cComponent::callInitialize()
+     virtual void callInitialize() = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:418:18: note: 	virtual bool omnetpp::cComponent::callInitialize(int)
+     virtual bool callInitialize(int stage) = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:424:18: note: 	virtual void omnetpp::cComponent::callFinish()
+     virtual void callFinish() = 0;
+                  ^~~~~~~~~~
+nodeCmp.cc: At global scope:
+nodeCmp.cc:15:1: error: expected unqualified-id at end of input
+ }
+ ^
+Makefile:103: recipe for target 'out/gcc-release//nodeCmp.o' failed
+make: *** [out/gcc-release//nodeCmp.o] Error 1
+09:39:37 **** Incremental Build of configuration release for project fzk_uebung02 ****
+make MODE=release all 
+node.cc
+nodeCmp.cc
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/globals.h:21:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cobjectfactory.h:20,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:30,
+                 from nodeCmp.cc:2:
+nodeCmp.cc:11:1: error: expected unqualified-id before ‘namespace’
+ Define_Module(NodeCmp);
+ ^
+nodeCmp.cc:13:6: error: ‘StampNode’ has not been declared
+ void StampNode::initialize() {
+      ^~~~~~~~~
+nodeCmp.cc:13:6: error: ‘void NodeCmp::initialize()’ cannot be overloaded
+nodeCmp.cc:9:22: error: with ‘virtual void NodeCmp::initialize()’
+         virtual void initialize() override;
+                      ^~~~~~~~~~
+nodeCmp.cc:15:1: error: expected ‘}’ at end of input
+ }
+ ^
+In file included from /opt/omnetpp-5.4.1/include/omnetpp/cobject.h:26:0,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cnamedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/cownedobject.h:23,
+                 from /opt/omnetpp-5.4.1/include/omnetpp/carray.h:19,
+                 from /opt/omnetpp-5.4.1/include/omnetpp.h:28,
+                 from nodeCmp.cc:2:
+nodeCmp.cc: In static member function ‘static omnetpp::cObject* NodeCmp::__factoryfunc_11()’:
+nodeCmp.cc:11:15: error: invalid new-expression of abstract class type ‘NodeCmp’
+ Define_Module(NodeCmp);
+               ^
+nodeCmp.cc:6:7: note:   because the following virtual functions are pure within ‘NodeCmp’:
+ class NodeCmp : public cComponent {
+       ^~~~~~~
+In file included from /opt/omnetpp-5.4.1/include/omnetpp.h:33:0,
+                 from nodeCmp.cc:2:
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:173:18: note: 	virtual void omnetpp::cComponent::callRefreshDisplay()
+     virtual void callRefreshDisplay() = 0;
+                  ^~~~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:340:26: note: 	virtual omnetpp::cProperties* omnetpp::cComponent::getProperties() const
+     virtual cProperties *getProperties() const = 0;
+                          ^~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:377:27: note: 	virtual omnetpp::cComponent::ComponentKind omnetpp::cComponent::getComponentKind() const
+     virtual ComponentKind getComponentKind() const = 0;
+                           ^~~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:394:22: note: 	virtual omnetpp::cModule* omnetpp::cComponent::getParentModule() const
+     virtual cModule *getParentModule() const = 0;
+                      ^~~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:412:18: note: 	virtual void omnetpp::cComponent::callInitialize()
+     virtual void callInitialize() = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:418:18: note: 	virtual bool omnetpp::cComponent::callInitialize(int)
+     virtual bool callInitialize(int stage) = 0;
+                  ^~~~~~~~~~~~~~
+/opt/omnetpp-5.4.1/include/omnetpp/ccomponent.h:424:18: note: 	virtual void omnetpp::cComponent::callFinish()
+     virtual void callFinish() = 0;
+                  ^~~~~~~~~~
+nodeCmp.cc: At global scope:
+nodeCmp.cc:15:1: error: expected unqualified-id at end of input
+ }
+ ^
+make: *** [out/gcc-release//nodeCmp.o] Error 1
+Makefile:103: recipe for target 'out/gcc-release//nodeCmp.o' failed

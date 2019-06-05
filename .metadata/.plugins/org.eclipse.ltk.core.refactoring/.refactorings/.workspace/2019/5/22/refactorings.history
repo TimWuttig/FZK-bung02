@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;tictoc/tictoc2.ned&apos;" deleteContents="false" description="Delete resource &apos;tictoc/tictoc2.ned&apos;" element1="/tictoc/tictoc2.ned" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1559110582022"/>&#x0A;<refactoring comment="Delete resource &apos;tictoc/txc2.cc&apos;" deleteContents="false" description="Delete resource &apos;tictoc/txc2.cc&apos;" element1="/tictoc/txc2.cc" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1559110617006"/>
+</session>

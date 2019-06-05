@@ -1,0 +1,70 @@
+#include <omnetpp.h>
+#include <string.h>
+#include <prior_message_m.h>
+
+using namespace omnetpp;
+
+class Node : public cSimpleModule {
+    private:
+        bool master;
+        cMessage *mastertimer;
+        cMessage *delaytimer;
+        int master_id;
+        cOutVector delayVector;
+
+    protected:
+        virtual void initialize() override;
+        virtual void handleMessage(cMessage *msg) override;
+        virtual void masterBehavior(cMessage *msg);
+        virtual void slaveBehavior(cMessage *msg);
+};
+
+Define_Module(Node);
+
+void Node::initialize(){
+    master = par("master");
+    mastertimer = new cMessage("timer");
+    delaytimer = new cMessage("timer");
+
+    if(master){
+        scheduleAt(0.0, mastertimer);
+    }
+}
+
+void Node::handleMessage(cMessage *msg) {
+    if(master){
+        masterBehavior(msg);
+    }else{
+        slaveBehavior(msg);
+    }
+}
+
+void Node::masterBehavior(cMessage *msg){
+    if(msg == mastertimer){
+        int n = gateSize("gate");
+        for(int i = 0; i < n; i++){
+            int prior = intuniform(0, 3);
+            PriorMessage *myMsg = new PriorMessage("MasterMsg");
+            myMsg->setPriority(prior);
+            send(myMsg, "gate$o", i);
+            EV << "MASTER: Sended message with prio: " << prior << " to slave" << (i+1) << "\n";
+        }
+
+        scheduleAt(simTime()+ 0.08, mastertimer);
+    }
+}
+
+void Node::slaveBehavior(cMessage *msg){
+    if(msg == delaytimer){
+        send(msg->dup(), "gate" + master_id + "$o");
+    }else {
+        PriorMessage *myMsg = (PriorMessage*) msg;
+        master_id = 0;
+        EV << "MASTER_ID" << msg->getArrivalGate()->getBaseId();
+        int prior = myMsg->getPriority();
+        simtime_t priorDelay = uniform(0, prior * 0.01);
+        simtime_t processingDelay = normal(0.0002, 0.0001);
+        simtime_t delay = priorDelay + processingDelay;
+        scheduleAt(simTime() + delay, delaytimer);
+    }
+}

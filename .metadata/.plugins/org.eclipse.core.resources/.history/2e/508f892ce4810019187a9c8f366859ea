@@ -1,0 +1,30 @@
+simple Node
+{
+    parameters:
+		bool master = default(false);
+
+	gates:
+	    input in;
+	    output out;
+}
+
+simple Master extends Node
+{
+	parameters:
+	    role = true;
+}
+
+simple Slave extends Node
+{
+	parameters:
+	    role = false;
+}
+
+network MasterSlave{
+	
+	submodules:
+	    master: Master;
+	    slave1: Slave;
+	    slave2: Slave;
+}
+

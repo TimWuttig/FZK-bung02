@@ -1,0 +1,4 @@
+[General]
+network = Tictoc
+Tictoc.toc.limit = 5
+Tictoc.t*c.delay = exponential(3s)

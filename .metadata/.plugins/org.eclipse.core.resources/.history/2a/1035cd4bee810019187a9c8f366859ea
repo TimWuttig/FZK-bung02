@@ -1,0 +1,3 @@
+[General]
+network = MasterSlave
+MasterSlave.node[0].master = true;

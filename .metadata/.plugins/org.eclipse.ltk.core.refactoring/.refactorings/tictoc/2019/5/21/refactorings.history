@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;tictoc/txc1.c&apos; to &apos;txc1.cc&apos;" description="Rename resource &apos;txc1.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="txc1.c" name="txc1.cc" stamp="1558509296090" updateReferences="true"/>
+</session>

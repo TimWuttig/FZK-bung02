@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fzk_uebung02/stampNode.cpp&apos; to &apos;stampNode.cc&apos;" description="Rename resource &apos;stampNode.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="stampNode.cpp" name="stampNode.cc" stamp="1559719236576" updateReferences="true"/>
+</session>

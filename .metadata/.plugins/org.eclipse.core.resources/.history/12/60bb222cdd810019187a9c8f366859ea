@@ -1,0 +1,41 @@
+#include <string.h>
+#include <omnetpp.h>
+
+using namespace omnetpp;
+
+class  Txc : public cSimpleModule
+{
+    private:
+        int counter;
+        cMessage* event;
+        cMessage* tictocMsg;
+
+
+    protected:
+        virtual void initialize() override;
+        virtual void handleMessage(cMessage *msg) override;
+};
+
+Define_Module(Txc);
+
+void Txc::initialize()
+{
+    if(par("sendMsgOnInit").boolValue() == true){
+        cMessage *msg = new cMessage("tictocMsg");
+        EV << "Sending initial message\n";
+        send(msg, "out");
+    }
+    counter = par("limit");
+    WATCH(counter);
+}
+
+void Txc::handleMessage(cMessage *msg){
+    if(msg == event){
+        EV << "Received message " << msg->getName() << ", sending it out again\n";
+        send(msg, "out");
+        counter--;
+    }else{
+        EV << "Sending delay signal";
+        //scheduleAt(simTime()+1.0, event);
+    }
+}

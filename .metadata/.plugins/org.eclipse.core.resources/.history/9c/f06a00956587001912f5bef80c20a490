@@ -1,0 +1,15 @@
+#include<string.h>
+#include<omnetpp.h>
+
+using namespace omnetpp;
+
+class NodeCmp : public cComponent {
+
+    protected:
+        virtual void initialize() override;
+
+Define_Module(NodeCmp);
+
+void StampNode::initialize() {
+
+}

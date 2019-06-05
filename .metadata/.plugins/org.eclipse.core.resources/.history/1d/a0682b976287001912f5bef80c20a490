@@ -1,0 +1,39 @@
+simple Node
+{
+    parameters:
+		bool master = default(false);
+	gates:
+	    inout gate[];
+	    inout layer;
+}
+
+simple StampNode
+{
+	gates:
+	    inout gate;
+}
+
+module NodeCmp
+{
+	gates:
+	    inout gate[];
+	submodules:
+	    layer1: Node;
+	    layer2: StampNode;
+	connections:
+	    layer1.gate++ <--> layer2.gate;
+}
+
+network MasterSlave{
+    types:
+        channel Channel extends ned.DelayChannel{
+            delay = 100ms;
+        }
+	submodules:
+	    node[3]: NodeCmp;
+	connections:
+	    node[0].gate++ <--> Channel <--> node[1].gate++;
+	    node[0].gate++ <--> Channel <--> node[2].gate++;
+	    node[1].gate++ <--> Channel <--> node[2].gate++;
+}
+
