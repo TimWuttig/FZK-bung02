@@ -1,1 +1,1 @@
--g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DWITH_MPI -DXMLPARSER=libxml -DWITH_TKENV -DWITH_PARSIM -DWITH_NETBUILDER   -I. -I/opt/omnetpp-5.4.1/include
+-g -Wall -MMD -MP -MF .d  -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=expat -DWITH_TKENV -DWITH_PARSIM -DWITH_NETBUILDER   -I. -I/home/tim/Schreibtisch/SS19/Fahrzeugkommunikation/Übung/omnetpp-5.5/include

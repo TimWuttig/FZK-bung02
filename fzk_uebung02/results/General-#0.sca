@@ -1,4 +1,3 @@
-file 1416 1560166791                                            
 version 2
 run General-0-20190610-13:38:33-11049
 attr configname General
@@ -17,6 +16,8 @@ attr runnumber 0
 attr seedset 0
 param MasterSlave.nodeCmp[1].master true
 
-vector 0 MasterSlave.nodeCmp[1].layer2 "" ETV
-0	445 970 27 224 0.200010241656 1.242363859214 28 0.1 0.21951682734 5.565656779613 1.1282165216655
+scalar MasterSlave.nodeCmp[1].layer2 "Priority 0" 11
+scalar MasterSlave.nodeCmp[1].layer2 "Priority 1" 13
+scalar MasterSlave.nodeCmp[1].layer2 "Priority 2" 4
+scalar MasterSlave.nodeCmp[1].layer2 "Priority 3" 6
 

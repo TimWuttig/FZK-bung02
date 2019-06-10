@@ -7,9 +7,10 @@ using namespace omnetpp;
 class Node : public cSimpleModule {
     private:
         bool master;
-        int prior_num[4];
+        int prior_num[4] = {};
         cMessage *mastertimer;
         cMessage *delaytimer;
+        PriorMessage *tmp;
         int master_id;
         cOutVector delayVector;
 
@@ -24,7 +25,7 @@ class Node : public cSimpleModule {
 Define_Module(Node);
 
 void Node::initialize(){
-    master = par("master");
+    master = getParentModule()->par("master");
     mastertimer = new cMessage("timer");
     delaytimer = new cMessage("timer");
 
@@ -43,14 +44,13 @@ void Node::handleMessage(cMessage *msg) {
 
 void Node::masterBehavior(cMessage *msg){
     if(msg == mastertimer){
-        int n = gateSize("gate");
+        int n = getParentModule()->gateSize("gate");
         for(int i = 0; i < n; i++){
             int prior = intuniform(0, 3);
-            prior_num[prior-1]++;
+            prior_num[prior]++;
             PriorMessage *myMsg = new PriorMessage("MasterMsg");
             myMsg->setPriority(prior);
-            myMsg->setTimestamp();
-            send(myMsg, "gate$o", i);
+            send(myMsg, "gate$o");
             EV << "MASTER: Sended message with prio: " << prior << " to slave" << (i+1) << "\n";
         }
 
@@ -62,28 +62,25 @@ void Node::masterBehavior(cMessage *msg){
 
 void Node::slaveBehavior(cMessage *msg){
     if(msg == delaytimer){
-        cMessage *answer = msg->dup();
-        send(answer, "gate$o", master_id);
+        cMessage *answer = tmp->dup();
+        send(answer, "gate$o");
     }else {
-        PriorMessage *myMsg = (PriorMessage*) msg;
-        std::string gatename = myMsg->getArrivalGate()->getFullName();
-        unsigned start = gatename.find("[");
-        unsigned end = gatename.find("]");
+        tmp = (PriorMessage*) msg;
 
-        master_id = std::stoi(gatename.substr(start + 1, end - start));
-        int prior = myMsg->getPriority();
+        int prior = tmp->getPriority();
         simtime_t priorDelay = uniform(0, prior * 0.01);
         simtime_t processingDelay = normal(0.0002, 0.0001);
         simtime_t delay = priorDelay + processingDelay;
-        EV << "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM";
-        if(delay.dbl() < 0) delay = 1.0;
+        if(delay.dbl() < 0) delay = 0.0;
         scheduleAt(simTime() + delay, delaytimer);
     }
 }
 
 void Node::finish(){
-    recordScalar("Priority 0", prior_num[0]);
-    recordScalar("Priority 1", prior_num[1]);
-    recordScalar("Priority 2", prior_num[2]);
-    recordScalar("Priority 3", prior_num[3]);
+    if(master){
+        recordScalar("Priority 0", prior_num[0]);
+        recordScalar("Priority 1", prior_num[1]);
+        recordScalar("Priority 2", prior_num[2]);
+        recordScalar("Priority 3", prior_num[3]);
+    }
 }

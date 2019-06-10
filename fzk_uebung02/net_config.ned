@@ -1,39 +1,44 @@
 simple Node
 {
-    parameters:
-		bool master = default(false);
-	gates:
-	    inout gate;
+    gates:
+        inout gate;
 }
 
 simple StampNode
 {
-	gates:
-	    inout innergate;
-	    inout outergate;
+    gates:
+        inout innergate;
+        inout outergate[];
 }
 
 module NodeCmp
 {
-	gates:
-	    inout gate[];
-	submodules:
-	    layer2: Node;
-	    layer1: StampNode;
-	connections:
-	    layer1.innergate <--> layer2.gate;
+    parameters:
+        bool master = default(false);
+    gates:
+        inout gate[];
+    submodules:
+        layer2: Node;
+        layer1: StampNode;
+    connections:
+        layer1.innergate <--> layer2.gate;
+        for i=0..sizeof(gate)-1{
+        	layer1.outergate++ <--> gate++;
+        }
 }
 
-network MasterSlave{
+network MasterSlave
+{
     types:
-        channel Channel extends ned.DelayChannel{
+        channel Channel extends ned.DelayChannel
+        {
             delay = 100ms;
         }
-	submodules:
-	    node[3]: Node;
-	connections:
-	    node[0].gate++ <--> Channel <--> node[1].gate++;
-	    node[0].gate++ <--> Channel <--> node[2].gate++;
-	    node[1].gate++ <--> Channel <--> node[2].gate++;
+    submodules:
+        nodeCmp[3]: NodeCmp;
+    connections:
+        nodeCmp[0].gate++ <--> Channel <--> nodeCmp[1].gate++;
+        nodeCmp[0].gate++ <--> Channel <--> nodeCmp[2].gate++;
+        nodeCmp[1].gate++ <--> Channel <--> nodeCmp[2].gate++;
 }
 
